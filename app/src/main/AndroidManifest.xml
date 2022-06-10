@@ -10,10 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FastParking">
         <activity
-            android:name=".BuscarPlaca"
+            android:name=".home"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".vagas"
+            android:exported="false" />
+        <activity
+            android:name=".buscarvagas2"
+            android:exported="false" />
+        <activity
+            android:name=".buscarvaga"
+            android:exported="false" />
+
+        <activity
+            android:name=".splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

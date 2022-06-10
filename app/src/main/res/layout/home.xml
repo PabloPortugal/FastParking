@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#111747"
-    tools:context=".BuscarPlaca">
+    tools:context=".home"
+    android:background="#111747">
+
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="231dp"
-        android:layout_height="122dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059"
-        app:srcCompat="@drawable/Logo" />
+        app:layout_constraintVertical_bias="0.114" />
 
-    <Button
+    <ImageButton
         android:id="@+id/vagas"
-        android:layout_width="145dp"
-        android:layout_height="206dp"
-        android:layout_margin="20dp"
-        android:backgroundTint="#1B1B1B"
-        android:text="Vagas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#111747"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
+        app:srcCompat="@drawable/vagas" />
 
-    <Button
-        android:id="@+id/buscarVagas"
-        android:layout_width="145dp"
-        android:layout_height="206dp"
-        android:backgroundTint="#1B1B1B"
-        android:text=" Buscar "
+    <ImageButton
+        android:id="@+id/buscarvagas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#111747"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55"
-        tools:text="Veiculo" />
+        app:srcCompat="@drawable/buscarveiculo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

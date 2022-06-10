@@ -3,9 +3,10 @@ package com.example.fastparking
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class BuscarPlaca : AppCompatActivity() {
+class buscarvaga : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.`home.xml`)
+        setContentView(R.layout.buscarvaga)
+
     }
 }
