@@ -3,6 +3,7 @@ package com.example.fastparking
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.inputmethod.InputBinding
 import android.widget.ImageButton
 import java.util.*
 import kotlin.concurrent.schedule
@@ -15,7 +16,9 @@ class home : AppCompatActivity() {
         val buscarvagas = findViewById<ImageButton>(R.id.buscarvagas)
         home.setOnClickListener{ home()}
         buscarvagas.setOnClickListener{buscarVagas()}
+
     }
+
         private fun home(){
             val intent = Intent(this, vagas::class.java)
             startActivity(intent)
@@ -23,10 +26,12 @@ class home : AppCompatActivity() {
         }
 
         private fun buscarVagas(){
-            val intent = Intent(this, buscarvagas2::class.java)
+            val intent = Intent(this, buscarvagas::class.java)
             startActivity(intent)
 
         }
+
+
 
 
 }
